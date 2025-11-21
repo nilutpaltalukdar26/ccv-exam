@@ -1,3 +1,4 @@
+/* Global styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,22 +7,38 @@
 }
 
 body {
-  background: #f5f5f5;
-  color: #333;
-  line-height: 1.6;
+  background: #f4f7fb;
+  color: #222;
 }
 
+/* Header */
 header {
+  background: linear-gradient(120deg, #00695c, #00897b);
+  color: #fff;
   text-align: center;
-  padding: 20px;
-  background: #1e88e5;
-  color: white;
+  padding: 25px 10px;
 }
 
 header h1 {
   margin-bottom: 8px;
 }
 
+/* Search box */
+.search-section {
+  text-align: center;
+  padding: 15px;
+}
+
+#searchInput {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Cards layout */
 main {
   padding: 20px;
 }
@@ -33,40 +50,58 @@ main {
 }
 
 .card {
-  background: white;
-  border-radius: 8px;
-  padding: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card img {
   width: 100%;
-  border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 12px 15px 15px;
 }
 
 .card h2 {
-  margin: 10px 0 5px;
+  margin-bottom: 8px;
+  color: #00695c;
 }
 
-#infoBtn {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-size: 16px;
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Button */
+.fact-btn {
+  padding: 8px 14px;
   border: none;
-  border-radius: 6px;
+  border-radius: 20px;
   cursor: pointer;
-  background: #43a047;
-  color: white;
+  font-size: 13px;
+  background: #00897b;
+  color: #fff;
 }
 
-#infoBtn:hover {
+.fact-btn:hover {
   opacity: 0.9;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 10px;
-  background: #eeeeee;
+  background: #e0f2f1;
   margin-top: 20px;
+  font-size: 14px;
 }
