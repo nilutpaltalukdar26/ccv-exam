@@ -2,45 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tourist Spots of India</title>
+  <title>Tourist Places of Arunachal Pradesh</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Famous Tourist Places</h1>
-    <p>Explore beautiful destinations and plan your next trip.</p>
+    <h1>Tourist Places of Arunachal Pradesh</h1>
+    <p>Discover some of the most beautiful destinations in Arunachal Pradesh.</p>
   </header>
+
+  <section class="search-section">
+    <input type="text" id="searchInput" placeholder="Search a place (e.g. Sela Pass)" />
+  </section>
 
   <main>
     <section class="cards">
 
-      <article class="card">
-        <img src="https://picsum.photos/400/250?random=1" alt="Taj Mahal">
-        <h2>Taj Mahal, Agra</h2>
-        <p>One of the Seven Wonders of the World, built by Shah Jahan.</p>
+      <!-- Gongar Lake -->
+      <article class="card" data-name="gongar lake">
+        <img src=".jpg" alt="Gongar Lake">
+        <div class="card-content">
+          <h2>gongkar lake.jpeg</h2>
+          <p>
+            A serene high-altitude lake surrounded by mountains and pristine natural beauty.
+          </p>
+          <button class="fact-btn">Show Fun Fact</button>
+        </div>
       </article>
 
-      <article class="card">
-        <img src="https://picsum.photos/400/250?random=2" alt="Goa Beach">
-        <h2>Beaches of Goa</h2>
-        <p>Popular for nightlife, beaches, water sports and seafood.</p>
+      <!-- Mago Valley -->
+      <article class="card" data-name="mago valley">
+        <img src="mago valley.jpg" alt="Mago Valley">
+        <div class="card-content">
+          <h2>Mago Valley</h2>
+          <p>
+            A picturesque valley known for its trekking routes, waterfalls and peaceful villages.
+          </p>
+          <button class="fact-btn">Show Fun Fact</button>
+        </div>
       </article>
 
-      <article class="card">
-        <img src="https://picsum.photos/400/250?random=3" alt="Kashmir">
-        <h2>Kashmir Valley</h2>
-        <p>Known as Heaven on Earth with snow-capped mountains and lakes.</p>
+      <!-- Bumla Pass -->
+      <article class="card" data-name="bumla pass">
+        <img src="bumla pass.jpeg" alt="Bumla Pass">
+        <div class="card-content">
+          <h2>Bumla Pass</h2>
+          <p>
+            A historic mountain pass on the Indo-China border, famous for snow and scenic views.
+          </p>
+          <button class="fact-btn">Show Fun Fact</button>
+        </div>
+      </article>
+
+      <!-- Sela Pass -->
+      <article class="card" data-name="sela pass">
+        <img src="sela pass.jpg" alt="Sela Pass">
+        <div class="card-content">
+          <h2>Sela Pass</h2>
+          <p>
+            One of the most stunning passes, with frozen lakes and snow-covered peaks in winter.
+          </p>
+          <button class="fact-btn">Show Fun Fact</button>
+        </div>
       </article>
 
     </section>
   </main>
 
-  <button id="infoBtn">Show Travel Tip</button>
-
   <footer>
-    <p>&copy; 2025 Tourist Guide. All rights reserved.</p>
+    <p>&copy; 2025 Arunachal Tourism Showcase</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
+
